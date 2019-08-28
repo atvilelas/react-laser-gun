@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "/Users/atvilelas/Documents/Development/react/react-laser-gun/src/*"
+      ],
+      "@Components/*": [
+        "/Users/atvilelas/Documents/Development/react/react-laser-gun/src/components/*"
+      ],
+      "@Constants/*": [
+        "/Users/atvilelas/Documents/Development/react/react-laser-gun/src/constants/*"
+      ]
+    }
+  }
+}
