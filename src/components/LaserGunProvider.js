@@ -4,7 +4,7 @@ import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import LaserGunWatcher from '@Components/LaserGunWatcher';
 
-import {KEY_CODES} from '../constants';
+import { KEY_CODES } from '../constants';
 
 export const machineDefaultThresholds = {
   batchThreshold: 400,
@@ -97,10 +97,10 @@ const getLaserGunProvider = Provider => class LaserGunProvider extends Component
 
     this.clocks.control = window.setTimeout(() => {
       console.log('next word');
-    }, 1500);
+    }, 900);
 
     this.clocks.batch = window.setTimeout(() => {
-      this.processPatternBatch();
+      this.processTimeoutBatch();
     }, this.props.batchThreshold);
   };
 
